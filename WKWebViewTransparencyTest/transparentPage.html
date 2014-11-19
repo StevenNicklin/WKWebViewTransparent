@@ -1,0 +1,22 @@
+<html><head>
+    
+<script type="text/javascript">
+    
+    function getTestMessage() {
+        window.webkit.messageHandlers.test.postMessage({body: "This is a test message."});
+    }
+
+    function displayMessage() {
+        return "This is a test message";
+    }
+
+</script>
+
+</head><body style="overflow:hidden;background-color:rgba(0,0,0,0);">
+    
+    <script>
+        document.write(displayMessage());
+<!--        document.write(getTestMessage());-->
+    </script>
+    
+</body></html>
